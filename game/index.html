@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Star Catcher — a tiny browser game</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #070b1d; }
+  canvas { display: block; touch-action: none; }
+  #hint {
+    position: fixed; left: 0; right: 0; bottom: 14px; text-align: center;
+    color: rgba(255,255,255,0.55); font: 15px/1.4 system-ui, sans-serif;
+    pointer-events: none; user-select: none;
+  }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hint">← → move the basket &nbsp;·&nbsp; catch the stars &nbsp;·&nbsp; 3 misses ends the game</div>
+<script src="game.js"></script>
+</body>
+</html>
